@@ -1,18 +1,9 @@
-## Introduction to python
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 11 18:23:33 2022
 
-# Type of variables
-
-# Integer
-a = 5
-
-# Float
-b = 5.0
-
-# String
-c = "Hello"
-
-mystring = "Hello world"
-mystring[0]
+@author: Pastor
+"""
 
 # List
 my_list = [1,2,3]
@@ -46,26 +37,5 @@ new_list.sort() # this sort happens inplace, which mean there is no need to stor
 
 # reverse method
 num_list = [1,3,4,8]
-num_list.reverse()
 
-
-
-
-
-# concatanate list
-
-
-#### Physics in python
-high_market = 15827.75
-low_market = 15570
-distance =  high_market - low_market
-time = 30
-velocity = round(distance/time,2)
-time_day = time * 13.5
-
-print(f'Points per minute {velocity}')
-
-# If we keept the average velocity what would be the distance traveled at the market close
-distance_traveled_day = velocity * time_day
-
-print(f'Distance the full day {distance_traveled_day}')
+num_list.reverse() # inplace method
