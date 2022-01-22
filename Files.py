@@ -7,7 +7,7 @@ Created on Thu Jan 13 12:52:36 2022
 
 myfile = open('myfile.txt') # open the file
 
-pwd # working directory
+#pwd # working directory
 
 myfile.read()
 
