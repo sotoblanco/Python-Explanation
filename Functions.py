@@ -104,6 +104,68 @@ def employee_check(work_hours):
 name, hours = employee_check(work_hours)
 
 
+# interaction between python functions
+example = [1,2,3,4,5,6,7]
+
+from random import shuffle
+
+# this is made inplace so we cannot save into a variable
+shuffle(example)
+
+example
+
+# to make it save into a new variable we do:
+
+def shuffle_list(mylist):
+    
+    shuffle(mylist)
+    return mylist
+
+
+results = shuffle_list(example)
+
+results
+
+mylist = ["", "0", ""]
+
+shuffle(mylist)
+
+def player_guess():
+    
+    guess = ""
+    
+    while guess not in ["0", "1", "2"]:
+        guess = input("Pick a number: 0,1, or 2: ")
+        
+    return int(guess)
+        
+        
+    
+player_guess()
+
+
+myindex = player_guess()
+
+def check_guess(mylist, guess):
+    
+    if mylist[guess] == "0":
+        print("Correct!")
+        
+    else:
+        print("Wrong gues!")
+        
+        print(mylist)
+
+
+mylist = ["", "0", ""]
+
+mixedup_list = shuffle_list(mylist)
+
+guess = player_guess()
+
+check_guess(mixedup_list, guess)
+
+
 
 
 
